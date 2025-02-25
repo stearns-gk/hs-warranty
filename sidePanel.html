@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+  <title>App Enablement Showcase</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="description" content="App Enablement Showcase">
+  <meta name="author" content="rpotesil">
+  <link rel="stylesheet" href="css/w3.css" type="text/css" />
+  <!-- Jquery API -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript">
+    $(window).load(function() {
+      // Animate loader off screen
+      $(".se-pre-con").fadeOut("slow");;
+    });
+  </script>
+  <!-- App Enablement scripts-->
+  <script type="text/javascript" src="libs/AppEnablementConnector.js"></script>
+  <script type="text/javascript" src="libs/api/Common.js"></script>
+  <script type="text/javascript" src="libs/api/Masterdata.js"></script>
+  <script type="text/javascript" src="libs/api/ExternalMasterdata.js"></script>
+  <script type="text/javascript" src="libs/api/Pos.js"></script>
+  <!-- Main App scripts -->
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body style="margin:0; padding:0;" >
+  <div class="se-pre-con"></div>
+
+  <div id="main" class="sidepanel">
+    <div id="main-content">
+      <img id="retailerLogo" src="./images/HS.png" style="margin-top: 260px; margin-left: 10px;" />
+      <div id="warrantyView" style="display: none;" class="w3-container w3-display-container">
+        <div>
+          <h4 style="solid black;">Insurance Available For:</h6>
+          <h4 id="itemName"></h4>
+          <!-- Rather than hard-coding the item image like I've done in the commented-out line below, 
+            it may be possible to get the item image URL from the event listener payload data to display here -->
+          <img id="warrantyItem" src="./images/585822004.jpg" style="margin-top: 30px; width: 150px; height: 150px;"/>
+          <button class="warrantyButton" onclick="registerWarrantyItem('oneYear')">3 Year Insurance - $129.99</button>
+          <button class="warrantyButton" onclick="registerWarrantyItem('twoYear')">Lifetime Insurance - $299.99</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

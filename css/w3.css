@@ -1,0 +1,61 @@
+/* W3.CSS 4.13 June 2019 by Jan Egil and Borge Refsnes */
+#main {
+    background-size: 100% 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+#main-content {
+    position: inherit;
+    left: 4%;
+    top: 2%;
+    width: 92%;
+    height: 96%;
+    /* border: 1px solid;
+    border-radius: 7px;
+    border-color: #718397; */
+    padding: 10px;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../images/preloader.gif") center no-repeat #fff;
+}
+
+.sidepanel {
+    /* background-image: url("../images/sidepanel_bg.png"); */
+    background-color: white;
+}
+
+#retailerLogo {
+    text-align: center;
+    width: 90%;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.w3-container {
+    padding: 0.01em 16px;
+    text-align: center;
+}
+
+.w3-display-container {
+    position: relative
+}
+
+.warrantyButton {
+    padding: 10px;
+    width: 80%;
+    border-radius: 4px;
+    background-color: rgb(242, 242, 242);
+    color: black;
+    margin-top: 30px;
+    font-size: 16px;
+}
